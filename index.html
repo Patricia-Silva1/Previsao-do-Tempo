@@ -3,40 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon"
+        href="https://images.vexels.com/media/users/3/213501/isolated/preview/a17749ece9ce89f2e1a558a430f66032-roupa-a-temperatura-da-agua.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="previsao.jpeg" type="image/x-icon">
-    <script src="scripts.js"></script>
-    <title>Dev Previsão</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Temperatura</title>
 </head>
 
 <body>
 
-    <div class="caixa-maior">
 
-        <input class="input-cidade" placeholder="Digite o nome da cidade">
-        <button onclick="cliqueiNoBotao()">
-            <img class="lupa" src="https://www.svgrepo.com/show/488200/find.svg">
-        </button>
 
-        <div class="caixa-media">
-            <h2 class="cidade">Tempo em Salvador </h2>
+    <div id="conteiner">
+
+        <input class="search" type="text" placeholder="Digite nome do seu cidade...">
+        <button onclick="clickedBhutan()"><img class="Lupa"
+                src="https://imagensemoldes.com.br/wp-content/uploads/2020/07/Desenho-Lupa-PNG.png" alt="Lupa"></button>
+
+        <div id="media-box">
+
+            <h2 class="city">Tempo na sua Cidade </h2>
             <p class="temp">28°C</p>
 
-            <div class="caixa-menor">
-                <img class="icone" src="https://openweathermap.org/img/wn/04n.png">
-                <p class="descricao">Nuvens Dispersas</p>
-            </div>
+            <div class="smaller">
 
-            <p class="umidade">Umidade: 70%</p>
+                <img class="icone" src="https://openweathermap.org/img/wn/04n.png" alt="Nuvens">
+                <p class="clouds">Nuvens Dispensas</p>
+
+            </div>
+            <p class="umidade">Umidade: 00% </p>
+
+
         </div>
 
     </div>
 
 </body>
+
+<script src="./scripts.js"></script>
 
 </html>
